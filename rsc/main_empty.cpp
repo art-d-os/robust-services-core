@@ -95,42 +95,14 @@
 #include "Singleton.h"
 #include "SysTypes.h"
 
-// modules follow:
-    #include "AnModule.h"
-//& #include "CbModule.h"
-    #include "CnModule.h"
-    #include "CtModule.h"
-//& #include "DipModule.h"
-//& #include "MbModule.h"
-//& #include "NbModule.h"
-//& #include "NwModule.h"
-//& #include "NtModule.h"
-    #include "OnModule.h"
-//& #include "PbModule.h"
-    #include "RnModule.h"
-//& #include "SbModule.h"
-    #include "SnModule.h"
-//& #include "StModule.h"
+// modules follow
+    #include "NbModule.h"
 
 using std::string;
 
 //------------------------------------------------------------------------------
 
     using namespace NodeBase;
-//& using namespace NodeTools;
-    using namespace CodeTools;
-//& using namespace NetworkBase;
-//& using namespace SessionBase;
-//& using namespace MediaBase;
-//& using namespace CallBase;
-//& using namespace SessionTools;
-//& using namespace PotsBase;
-    using namespace OperationsNode;
-    using namespace ControlNode;
-    using namespace RoutingNode;
-    using namespace ServiceNode;
-    using namespace AccessNode;
-//& using namespace Diplomacy;
 
 //------------------------------------------------------------------------------
 
@@ -158,21 +130,7 @@ main_t main(int argc, char* argv[])
 
    //  Instantiate the desired modules.
    //
-//& Singleton< NbModule >::Instance();
-//& Singleton< NtModule >::Instance();
-    Singleton< CtModule >::Instance();
-//& Singleton< NwModule >::Instance();
-//& Singleton< SbModule >::Instance();
-//& Singleton< StModule >::Instance();
-//& Singleton< MbModule >::Instance();
-//& Singleton< CbModule >::Instance();
-//& Singleton< PbModule >::Instance();
-    Singleton< OnModule >::Instance();
-    Singleton< CnModule >::Instance();
-    Singleton< RnModule >::Instance();
-    Singleton< SnModule >::Instance();
-    Singleton< AnModule >::Instance();
-//& Singleton< DipModule >::Instance();
+    Singleton< NbModule >::Instance();
 
    return RootThread::Main();
 }
